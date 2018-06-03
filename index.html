@@ -4,11 +4,21 @@
 <head>
   <meta charset="utf-8" />
   <title>Song Recroder</title>
-  <script defer src="renderer.js"></script>
+  <script defer src="index.js"></script>
 </head>
 
 <body>
-  Hello
+  <div id="sources">
+    <button id="refresh-sources-btn"> Refresh sources </button>
+    <select id="sources-list"></select>
+  </div>
+
+  <div id="recording">
+    <button id="start-recording-btn"> Start recording </button>
+    <p id="recording-status"> Ready </p>
+  </div>
+
+  <audio id="output" controls='true'></audio>
 </body>
 
 </html>
