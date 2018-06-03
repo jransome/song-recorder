@@ -21,7 +21,7 @@ const getAudioSources = () => {
 const createOptionElement = (source) => {
   let newOption = document.createElement('option')
   newOption.textContent = source.name
-  newOption.value = source.name
+  newOption.value = source.id
   return newOption
 }
 
